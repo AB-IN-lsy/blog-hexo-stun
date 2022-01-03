@@ -3,6 +3,18 @@ title: {{ title }}
 date: {{ date }}
 updated: {{ updated }}
 tags:
+  - 
+  - 
+  - 
+categories:
+  - []
+  - []
+excerpt: 摘要
+toc: true
+quicklink: true
+math: true
+sidebar: true
+copyright: true
 ---
 <font color=#000000	size=3 face=楷体>Powered by:**NEFU AB-IN**</font>
 

@@ -1,12 +1,11 @@
 ---
 title: Trie树
 tags:
-  - html
-  - css
-  - js
+  - 算法
+  - C++
+  - Trie树
 categories:
-  - - Match sol
-  - - ACM
+  - ACM
 excerpt: Trie + 01Trie
 toc: true
 quicklink: true
@@ -20,75 +19,74 @@ Powered by:**NEFU AB_IN**
 
 # <font color=#6495ED size=6>Trie树</font>
 
-模板带注释
+* ## 模板带注释
 
-```cpp
-// son[][]存储树中每个节点的子节点
-// cnt[]存储以每个节点结尾的单词数量
-namespace Trie{
-    const int N = 1e5 + 10;
-    int son[N][26], cnt[N], idx; // 'son[N][10]'
-    void init(){
-        memset(son, 0, sizeof son);
-        memset(cnt, 0, sizeof cnt);
-        idx = 0;
-    }
-    void insert(char *s){
-        int p = 0; // p代表每个节点的下标，现在为根节点
-        for(int i = 0; s[i]; ++ i){
-            int u = s[i] - 'a'; // '0'代表减数字时
-            // u代表p结点的子节点，但不是下标，u和p性质不一样
-            if(!son[p][u]) son[p][u] = ++ idx; // 新建节点，每个节点都有自己的下标
-            p = son[p][u]; // 往下走
+    ```cpp
+    // son[][]存储树中每个节点的子节点
+    // cnt[]存储以每个节点结尾的单词数量
+    namespace Trie{
+        const int N = 1e5 + 10;
+        int son[N][26], cnt[N], idx; // 'son[N][10]'
+        void init(){
+            memset(son, 0, sizeof son);
+            memset(cnt, 0, sizeof cnt);
+            idx = 0;
         }
-        cnt[p] ++; // 统计以p下标结尾单词的数量
-    }
-    int query(char *s){
-        int p = 0;
-        for(int i = 0; s[i]; ++ i){
-            int u = s[i] - 'a'; // '0'
-            if(!son[p][u]) return 0;
-            p = son[p][u];
+        void insert(char *s){
+            int p = 0; // p代表每个节点的下标，现在为根节点
+            for(int i = 0; s[i]; ++ i){
+                int u = s[i] - 'a'; // '0'代表减数字时
+                // u代表p结点的子节点，但不是下标，u和p性质不一样
+                if(!son[p][u]) son[p][u] = ++ idx; // 新建节点，每个节点都有自己的下标
+                p = son[p][u]; // 往下走
+            }
+            cnt[p] ++; // 统计以p下标结尾单词的数量
         }
-        return cnt[p];
+        int query(char *s){
+            int p = 0;
+            for(int i = 0; s[i]; ++ i){
+                int u = s[i] - 'a'; // '0'
+                if(!son[p][u]) return 0;
+                p = son[p][u];
+            }
+            return cnt[p];
+        }
     }
-}
-using namespace Trie;
-```
+    using namespace Trie;
+    ```
 
-无注释
+* ## 无注释
 
-```cpp
-namespace Trie{
-    const int N = 1e5 + 10;
-    int son[N][26], cnt[N], idx;
-    void init(){
-        memset(son, 0, sizeof son);
-        memset(cnt, 0, sizeof cnt);
-        idx = 0;
-    }
-    void insert(char *s){
-        int p = 0;
-        for(int i = 0; s[i]; ++ i){
-            int u = s[i] - 'a';
-            if(!son[p][u]) son[p][u] = ++ idx;
-            p = son[p][u];
+    ```cpp
+    namespace Trie{
+        const int N = 1e5 + 10;
+        int son[N][26], cnt[N], idx;
+        void init(){
+            memset(son, 0, sizeof son);
+            memset(cnt, 0, sizeof cnt);
+            idx = 0;
         }
-        cnt[p] ++;
-    }
-    int query(char *s){
-        int p = 0;
-        for(int i = 0; s[i]; ++ i){
-            int u = s[i] - 'a';
-            if(!son[p][u]) return 0;
-            p = son[p][u];
+        void insert(char *s){
+            int p = 0;
+            for(int i = 0; s[i]; ++ i){
+                int u = s[i] - 'a';
+                if(!son[p][u]) son[p][u] = ++ idx;
+                p = son[p][u];
+            }
+            cnt[p] ++;
         }
-        return cnt[p];
+        int query(char *s){
+            int p = 0;
+            for(int i = 0; s[i]; ++ i){
+                int u = s[i] - 'a';
+                if(!son[p][u]) return 0;
+                p = son[p][u];
+            }
+            return cnt[p];
+        }
     }
-}
-using namespace Trie;
-```
-
+    using namespace Trie;
+    ```
 
 
 # <font color=#6495ED size=6>**[Phone List](http://poj.org/problem?id=3630)**</font>
