@@ -1,7 +1,6 @@
 ---
 title: {{ title }}
 date: {{ date }}
-updated: {{ updated }}
 tags:
   - 
   - 
@@ -9,18 +8,19 @@ tags:
 categories:
   - []
   - []
-excerpt: 摘要
 toc: true
 quicklink: true
 math: true
 sidebar: true
 copyright: true
+reward: true
 ---
+
+此处写摘要
+<!-- more -->
 <font color=#000000	size=3 face=楷体>Powered by:**NEFU AB-IN**</font>
 
 <font color=#FFA500 size=5 face=楷体>[Link]()</font>
-
-@[TOC]
 
 # <font color=#6495ED size=6 ></font>
 

@@ -6,15 +6,18 @@ tags:
   - Trie树
 categories:
   - ACM
-excerpt: Trie + 01Trie
+#excerpt: Trie + 01Trie
 toc: true
 quicklink: true
 math: true
 sidebar: true
 copyright: true
+reward: true
 date: 2022-01-03 23:33:12
-updated:
 ---
+> Trie + 01Trie
+> 相关练习题题解
+<!-- more -->
 Powered by:**NEFU AB_IN**
 
 # <font color=#6495ED size=6>Trie树</font>
@@ -194,86 +197,86 @@ Powered by:**NEFU AB_IN**
 
 # <font color=#6495ED size=6>01Trie树</font>
 
-模板带注释
+* ## 模板带注释
 
-$01$字典树，每个分支只有$01$两个，主要解决**异或问题**
+    $01$字典树，每个分支只有$01$两个，主要解决**异或问题**
 
-如果多组数据运用$01trie$树时，需要进行初始化，可以像正常$trie$树一样进行$memset$操作，但有些题目就会$T$，这时我们可以采用更好的方法进行初始化。观察到分支只有两个，那么就可以在**创建新分支**的同时，对新分支的两个$01$子节点进行初始化，注意别忘了一开始也要对根节点的子节点进行初始化！
+    如果多组数据运用$01trie$树时，需要进行初始化，可以像正常$trie$树一样进行$memset$操作，但有些题目就会$T$，这时我们可以采用更好的方法进行初始化。观察到分支只有两个，那么就可以在**创建新分支**的同时，对新分支的两个$01$子节点进行初始化，注意别忘了一开始也要对根节点的子节点进行初始化！
 
-```cpp
-namespace Trie01{
-    const int N = 1e5 + 10;
-    int son[N * 32][2], val[N * 32], idx; // n个数，每个数最多被拆成不超过32位
-    void init(){
-        idx = 0;
-        son[0][0] = son[0][1] = 0;
-        // val没必要进行初始化，因为是可以覆盖的
-    }
-    void insert(int x){
-        int p = 0;
-        for(int i = 31; i >= 0; -- i){ 
-            // 贪心时构建01trie树的基础，从二进制的高位开始贪心
-            int u = (x >> i) & 1;
-            if(!son[p][u]){
-                son[p][u] = ++ idx;
-                p = son[p][u];
-                // 构造新节点的同时初始化新节点
-                son[p][0] = son[p][1] = 0;
+    ```cpp
+    namespace Trie01{
+        const int N = 1e5 + 10;
+        int son[N * 32][2], val[N * 32], idx; // n个数，每个数最多被拆成不超过32位
+        void init(){
+            idx = 0;
+            son[0][0] = son[0][1] = 0;
+            // val没必要进行初始化，因为是可以覆盖的
+        }
+        void insert(int x){
+            int p = 0;
+            for(int i = 31; i >= 0; -- i){ 
+                // 贪心时构建01trie树的基础，从二进制的高位开始贪心
+                int u = (x >> i) & 1;
+                if(!son[p][u]){
+                    son[p][u] = ++ idx;
+                    p = son[p][u];
+                    // 构造新节点的同时初始化新节点
+                    son[p][0] = son[p][1] = 0;
+                }
+                else p = son[p][u];
             }
-            else p = son[p][u];
+            val[p] = x; // 记录终点
         }
-        val[p] = x; // 记录终点
-    }
-    int query(int x){
-        int p = 0;
-        for(int i = 31; i >= 0; -- i){
-            int u = (x >> i) & 1;
-            // 贪心的选择优先走和当前位不同的路
-            if(son[p][u ^ 1]) p = son[p][u ^ 1];
-            else p = son[p][u];
-        }
-        return val[p];
-    }
-}
-using namespace Trie01;
-```
-
-无注释
-
-```cpp
-namespace Trie01{
-    const int N = 1e5 + 10;
-    int son[N * 32][2], val[N * 32], idx;
-    void init(){
-        idx = 0;
-        son[0][0] = son[0][1] = 0;
-    }
-    void insert(int x){
-        int p = 0;
-        for(int i = 31; i >= 0; -- i){
-            int u = (x >> i) & 1;
-            if(!son[p][u]){
-                son[p][u] = ++ idx;
-                p = son[p][u];
-                son[p][0] = son[p][1] = 0;
+        int query(int x){
+            int p = 0;
+            for(int i = 31; i >= 0; -- i){
+                int u = (x >> i) & 1;
+                // 贪心的选择优先走和当前位不同的路
+                if(son[p][u ^ 1]) p = son[p][u ^ 1];
+                else p = son[p][u];
             }
-            else p = son[p][u];
+            return val[p];
         }
-        val[p] = x;
     }
-    int query(int x){
-        int p = 0;
-        for(int i = 31; i >= 0; -- i){
-            int u = (x >> i) & 1;
-            if(son[p][u ^ 1]) p = son[p][u ^ 1];
-            else p = son[p][u];
-        }
-        return val[p];
-    }
-}
-using namespace Trie01;
-```
+    using namespace Trie01;
+    ```
 
+
+* ## 无注释
+
+    ```cpp
+    namespace Trie01{
+        const int N = 1e5 + 10;
+        int son[N * 32][2], val[N * 32], idx;
+        void init(){
+            idx = 0;
+            son[0][0] = son[0][1] = 0;
+        }
+        void insert(int x){
+            int p = 0;
+            for(int i = 31; i >= 0; -- i){
+                int u = (x >> i) & 1;
+                if(!son[p][u]){
+                    son[p][u] = ++ idx;
+                    p = son[p][u];
+                    son[p][0] = son[p][1] = 0;
+                }
+                else p = son[p][u];
+            }
+            val[p] = x;
+        }
+        int query(int x){
+            int p = 0;
+            for(int i = 31; i >= 0; -- i){
+                int u = (x >> i) & 1;
+                if(son[p][u ^ 1]) p = son[p][u ^ 1];
+                else p = son[p][u];
+            }
+            return val[p];
+        }
+    }
+    using namespace Trie01;
+    ```
 
 
 # <font color=#6495ED size=6>**[Xor Sum(hdu4825)](https://acm.hdu.edu.cn/showproblem.php?pid=4825)**</font>
