@@ -103,3 +103,13 @@ theme: stun
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+  
+search:
+  path: search.json
+  field: post
+  content: true
+
+algolia:
+  applicationID: "DU3TAVNH2B"
+  apiKey: "483f4ee8a687ed876e44dc2c27d52939"
+  indexName: "hexo_BLOG"

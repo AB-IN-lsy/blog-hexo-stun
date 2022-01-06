@@ -19,7 +19,11 @@ date: 2022-01-05 00:10:21
 photos: 
   - https://oss.ab-in.cn/images/WEB.png
 ---
-
+<!-- With header, With icon -->
+{% note success %}
+**Success**
+Done!
+{% endnote %}
 > Web 开发技术项目设计日志
 > 大三WEB课程结课作业，内容为计算机科学与技术专业的专业官网
 > 包含新闻，专业，教师，实验室等板块
