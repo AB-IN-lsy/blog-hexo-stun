@@ -27,6 +27,8 @@ date: 2022-01-06 19:37:21
 
 <font color=#FFA500 size=5 face=楷体>[Link](https://codeforces.com/contest/1592)</font>
 
+@[TOC](文章目录)	
+
 # <font color=#6495ED size=6 >WebHomework-02</font>
 
 * ### <font color=#000000 size=4 face=粗体>homework2 解读</font>

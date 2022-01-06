@@ -24,6 +24,7 @@ media响应式布局
 
 <font color=#FFA500 size=5 face=楷体>[Link](https://codeforces.com/contest/1592)</font>
 
+@[TOC](文章目录)	
 
 # <font color=#6495ED size=6 >WebHomework-04</font>
 

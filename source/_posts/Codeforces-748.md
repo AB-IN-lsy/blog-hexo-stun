@@ -24,6 +24,8 @@ A,B,C,D1,D2（差值+gcd）,E（类拓扑）
 
 <font color=#FFA500 size=5 face=楷体>[Link](https://codeforces.com/contest/1593)</font>
 
+@[TOC](文章目录)	
+
 
 # <font color=#6495ED size=6 >Codeforces Round #748 (Div. 3)</font>
 

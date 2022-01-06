@@ -24,6 +24,9 @@ A,B,C（二维前缀和）
 
 <font color=#FFA500 size=5 face=楷体>[Link](https://codeforces.com/contest/1581)</font>
 
+@[TOC](文章目录)	
+
+
 # <font color=#6495ED size=6 >Codeforces Round #745 (Div. 2)</font>
 
 ## <font color=#FFA500 size=5>A. CQXYM Count Permutations</font>

@@ -28,6 +28,8 @@ gcc 8.1.0升级至11.2.0
 <!-- more -->
 <font color=#000000	size=3 face=楷体>Powered by:**NEFU AB-IN**</font>
 
+@[TOC](文章目录)	
+
 $ps:$如果下到D盘，那么路径都和我一样，如果下到C盘，别忘了改路径！
 # <font color=#6495ED size=6 >Windows Vscode C++17/20 配置教程</font>
 

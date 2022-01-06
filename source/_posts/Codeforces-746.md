@@ -23,6 +23,8 @@ A,B,C（异或，边分治）
 
 <font color=#FFA500 size=5 face=楷体>[Link](https://codeforces.com/contest/1592)</font>
 
+@[TOC](文章目录)	
+
 # <font color=#6495ED size=6 >Codeforces Round #746 (Div. 2)</font>
 
 ## <font color=#FFA500 size=5>A.Gamer Hemose</font>

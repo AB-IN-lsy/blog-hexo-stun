@@ -17,12 +17,14 @@ date: 2022-01-03 23:33:12
 ---
 {% note info %}
 **摘要**
-Trie + 01Trie
-既相关练习题题解
+Trie + 01Trie以及相关练习题题解
 {% endnote %}
 <!-- more -->
 
-Powered by:**NEFU AB_IN**
+<font color=#000000	size=3 face=楷体>Powered by:**NEFU AB-IN**</font>
+
+@[TOC](文章目录)	
+
 
 # <font color=#6495ED size=6>Trie树</font>
 

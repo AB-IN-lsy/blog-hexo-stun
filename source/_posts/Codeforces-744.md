@@ -22,6 +22,9 @@ A,B,C,D,E1,E2(树状数组求逆序对)
 
 <font color=#FFA500 size=5 face=楷体>[Link](https://codeforces.com/contest/1579)</font>
 
+@[TOC](文章目录)	
+
+
 # <font color=#6495ED size=6 >Codeforces Round #744 (Div. 3)</font>
 
 ## <font color=#FFA500 size=5>A. Casimir's String Solitaire</font>

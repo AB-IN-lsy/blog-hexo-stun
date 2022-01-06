@@ -26,6 +26,8 @@ reward: true
 
 <font color=#FFA500 size=5 face=楷体>[Link]()</font>
 
+@[TOC](文章目录)
+
 # <font color=#6495ED size=6 ></font>
 
 ## <font color=#FFA500 size=5></font>
