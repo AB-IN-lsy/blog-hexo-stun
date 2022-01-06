@@ -20,14 +20,13 @@ photos:
   - https://oss.ab-in.cn/images/WEB.png
 ---
 <!-- With header, With icon -->
-{% note success %}
-**Success**
-Done!
+{% note info %}
+**摘要**
+Web 开发技术项目设计日志
+大三WEB课程结课作业，内容为计算机科学与技术专业的专业官网
+包含新闻，专业，教师，实验室等板块
+前端与后台齐全，前端可进行针对关键词的搜索，后端可进行对文章的增删改查
 {% endnote %}
-> Web 开发技术项目设计日志
-> 大三WEB课程结课作业，内容为计算机科学与技术专业的专业官网
-> 包含新闻，专业，教师，实验室等板块
-> 前端与后台齐全，前端可进行针对关键词的搜索，后端可进行对文章的增删改查
 <!-- more -->
 
 <font color=#000000	size=3 face=楷体>Powered by:**NEFU AB-IN**</font>

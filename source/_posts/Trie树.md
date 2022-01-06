@@ -15,9 +15,13 @@ copyright: true
 reward: true
 date: 2022-01-03 23:33:12
 ---
-> Trie + 01Trie
-> 相关练习题题解
+{% note info %}
+**摘要**
+Trie + 01Trie
+既相关练习题题解
+{% endnote %}
 <!-- more -->
+
 Powered by:**NEFU AB_IN**
 
 # <font color=#6495ED size=6>Trie树</font>

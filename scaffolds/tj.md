@@ -16,8 +16,12 @@ copyright: true
 reward: true
 ---
 
+{% note info %}
+**摘要**
 此处写摘要
+{% endnote %}
 <!-- more -->
+
 <font color=#000000	size=3 face=楷体>Powered by:**NEFU AB-IN**</font>
 
 <font color=#FFA500 size=5 face=楷体>[Link]()</font>

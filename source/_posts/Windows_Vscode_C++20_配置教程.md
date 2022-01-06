@@ -20,8 +20,10 @@ date: 2022-01-05 21:10:21
 photos: 
   - https://oss.ab-in.cn/Pictures/g%2B%2B17.png
 ---
-
-> gcc 8.1.0升级至11.2.0
+{% note info %}
+**摘要**
+gcc 8.1.0升级至11.2.0
+{% endnote %}
 
 <!-- more -->
 <font color=#000000	size=3 face=楷体>Powered by:**NEFU AB-IN**</font>
