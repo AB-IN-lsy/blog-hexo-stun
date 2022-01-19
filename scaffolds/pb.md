@@ -2,25 +2,31 @@
 title: {{ title }}
 date: {{ date }}
 tags:
+  - Acwing
+  - 2022寒假
+  - 每日一题
   - 
   - 
   - 
 categories:
-  - []
-  - []
+  - [ACM]
+  - [2022寒假每日一题]
+  - [Python]
 toc: true
 quicklink: true
 math: true
 sidebar: true
 copyright: true
 reward: true
-photos: 
-  - 
 ---
+
 
 {% note info %}
 **摘要**
-此处写摘要
+Title: 
+Tag: 
+Memory Limit: 64 MB
+Time Limit: 1000 ms
 {% endnote %}
 <!-- more -->
 
@@ -30,15 +36,14 @@ photos:
 
 @[TOC](文章目录)
 
-# <font color=#6495ED size=6 ></font>
+# <font color=#6495ED size=6></font>
 
-* ### <font size=4 face=粗体></font>
-
-  
-* ### <font size=4 face=粗体></font>
-
-  
-* ### <font size=4 face=粗体></font>
+* ## <font size=4 face=粗体>题意</font>
 
   
 
+* ## <font size=4 face=粗体>思路</font>
+
+
+
+* ## <font size=4 face=粗体>代码</font>
