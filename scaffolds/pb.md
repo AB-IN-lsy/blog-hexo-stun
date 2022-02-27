@@ -3,7 +3,6 @@ title: {{ title }}
 date: {{ date }}
 tags:
   - Acwing
-  - 2022寒假
   - 每日一题
   - 
   - 
