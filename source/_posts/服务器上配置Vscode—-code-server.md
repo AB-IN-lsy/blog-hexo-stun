@@ -8,7 +8,6 @@ categories:
   - [ACM]
   - [Project]
 toc: true
-top: true
 quicklink: true
 math: true
 sidebar: true

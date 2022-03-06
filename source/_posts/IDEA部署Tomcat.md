@@ -8,7 +8,6 @@ categories:
   - [Project]
   - [Java]
 toc: true
-top: true
 quicklink: true
 math: true
 sidebar: true

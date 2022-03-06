@@ -6,7 +6,6 @@ tags:
 categories:
   - [Linux]
 toc: true
-top: true
 quicklink: true
 math: true
 sidebar: true
