@@ -45,6 +45,7 @@ Time Limit: 1000 ms
   ![oula](https://oss.ab-in.cn/Pictures/ouladingli.png)
 
   首先要保证 gcd(m, MOD) = 1, 才能运用欧拉定理
+  因为MOD为质数，所以 **m和MOD互质 -> m不是MOD的倍数**
 * ## <font size=4 face=粗体>代码</font>
 
   ```python
