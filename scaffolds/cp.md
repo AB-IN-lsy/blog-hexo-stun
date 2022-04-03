@@ -2,7 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 tags:
-  - 
+  - Acwing
   - 
   - 
 categories:
@@ -18,7 +18,8 @@ reward: true
 
 {% note info %}
 **摘要**
-此处写摘要
+Title: Acwing 第  场周赛
+Tag: 
 {% endnote %}
 <!-- more -->
 
