@@ -1,8 +1,8 @@
 ---
 title: Windows Vscode C++17/20 配置教程
 tags:
-  - vscode
-  - windows
+  - Vscode
+  - Windows
   - msys2
   - mingw64
   - C++
@@ -10,7 +10,7 @@ categories:
   - [ACM]
   - [Project]
 toc: true
-top: true000000000000
+top: true
 quicklink: true
 math: true
 sidebar: true
