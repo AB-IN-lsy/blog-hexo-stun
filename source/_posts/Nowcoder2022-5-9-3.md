@@ -1,5 +1,5 @@
 ---
-title: Nowcoder G 分割
+title: Nowcoder G. 分割
 tags:
   - Nowcoder
   - 规律
@@ -20,7 +20,7 @@ date: 2022-05-09 21:48:54
 
 {% note info %}
 **摘要**
-Title: Nowcoder G 分割
+Title: Nowcoder G. 分割
 Tag: 数学、规律
 Memory Limit: 64 MB
 Time Limit: 1000 ms
@@ -33,7 +33,7 @@ Time Limit: 1000 ms
 
 @[TOC](文章目录)
 
-# <font color=#6495ED size=6>Nowcoder G 分割</font>
+# <font color=#6495ED size=6>Nowcoder G. 分割</font>
 
 * ## <font size=4 face=粗体>题意</font>
 
