@@ -114,3 +114,9 @@ algolia:
     applicationID: "DU3TAVNH2B"
     apiKey: "483f4ee8a687ed876e44dc2c27d52939"
     indexName: "hexo_BLOG"
+
+pwa:
+    manifest:
+        # Manifest 文件名和路径
+        path: /manifest.json
+    priority: 5
