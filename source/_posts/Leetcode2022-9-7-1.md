@@ -107,7 +107,7 @@ Time Limit: 1000 ms
               return root;
           }    
           auto left = dfs(root->left, val);
-          if(left) return left;
+          if(left) return left; // 先把值记下来，如果不空再返回
           auto right = dfs(root->right, val);
           if(right) return right;
           
