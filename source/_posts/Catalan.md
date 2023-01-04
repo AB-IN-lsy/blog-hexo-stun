@@ -125,7 +125,8 @@ $$\begin{aligned} Catalan_n&=\frac{1}{n+1}C_{2n}^n \\ &= \frac{(2n)!}{n!n!}×\fr
   $$\lfloor \frac{n} {2} \rfloor + \lfloor \frac{n} {4} \rfloor + \lfloor \frac{n} {8} \rfloor + \lfloor \frac{n} {16} \rfloor+ ……$$
 
 * 给出不等式
-$$\lfloor \frac{n} {2} \rfloor + \lfloor \frac{n} {4} \rfloor + \lfloor \frac{n} {8} \rfloor + \lfloor \frac{n} {16} \rfloor+ ……\le n-1 \\ 当且仅当n为2的幂时，等号成立$$
+$$\lfloor \frac{n} {2} \rfloor + \lfloor \frac{n} {4} \rfloor + \lfloor \frac{n} {8} \rfloor + \lfloor \frac{n} {16} \rfloor+ ……\le n-1 \\ $$
+当且仅当n为2的幂时，等号成立
 将$n = 2^n$带进去一看
 $$2^{n-1} +2^{n-2} +……+4+2+1=2^n-1
 $$

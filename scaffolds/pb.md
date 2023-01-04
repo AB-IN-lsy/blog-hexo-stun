@@ -8,9 +8,7 @@ tags:
   - 
   - 
 categories:
-  - [ACM]
-  - [2022大三下学期]
-  - [Python]
+  - [2023大四下学期]
 toc: true
 quicklink: true
 math: true
