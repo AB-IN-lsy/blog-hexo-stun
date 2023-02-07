@@ -19,8 +19,7 @@ date: 2022-05-01 10:45:01
 
 {% note info %}
 **摘要**
-Vscode 创建task并绑定快捷键教程
-例子为创建新的文件
+Title: Vscode 创建task并绑定快捷键教程
 {% endnote %}
 <!-- more -->
 

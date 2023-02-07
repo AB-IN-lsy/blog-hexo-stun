@@ -21,11 +21,13 @@ date: 2022-07-06 11:37:57
 **摘要**
 Title: Codeforces Round 799 (Div. 4)
 Tag: 哈希表，三数之和
-problem: A, B, C, D, E, F, G, H
+Problem: A, B, C, D, E, F, G, H
 {% endnote %}
 <!-- more -->
 
 <font size=3 face=楷体>Powered by:**NEFU AB-IN**</font>
+  <font color=#FFA500 size=5 face=楷体>[B站直播录像！](https://www.bilibili.com/video/BV1Wj411M7GW/)</font>
+
 
 <font color=#FFA500 size=5 face=楷体>[Link](https://codeforces.com/contest/1692)</font>
 
